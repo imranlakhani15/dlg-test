@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("assets/fonts/oswald-regular.ttf");
+}
+@font-face {
+  font-family: "Oswald-Light";
+  src: url("assets/fonts/oswald-light.ttf");
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("assets/fonts/oswald-bold.ttf");
+}
+
+* {
+  font-family: "Oswald-Regular";
+  box-sizing: border-box;
+}
+
+/* You can add global styles to this file, and also import other style files */
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  @media screen and (max-width: 1200px) {
+    max-width: 970px;
+  }
+  @media screen and (max-width: 992px) {
+    max-width: 760px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+  }
+}
+
+
+.page-heading{
+  text-transform: uppercase;
+  font-family: "Oswald-Bold";
+  font-size: 30px;
+}
+
+.separator{
+  border: 0;
+  height: 30px;
+  background-color: #000;
+}

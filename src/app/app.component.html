@@ -1,0 +1,11 @@
+<div class="container">
+    <h1 class="page-heading">Have a question? we can help</h1>
+    <hr class="separator" />
+    <ng-container *ngIf="faqs.length">
+        <ng-container *ngFor="let item of faqs; let i=index;">
+            <app-accordion [headTitle]="item.question" (accordionClick)="toggle(i)" [questionNumber]="item.id">
+                <p>{{item.answer}}</p>
+            </app-accordion>
+        </ng-container>
+    </ng-container>
+</div>

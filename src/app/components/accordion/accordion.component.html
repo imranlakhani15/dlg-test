@@ -1,0 +1,9 @@
+<div class="accordion" [ngClass]="{'collapsed': _isCollapsed}">
+    <div class="accordion-head" (click)="collapse()">
+        <h3 class="questionNumber">Q{{questionNumber}}</h3>
+        <h2>{{headTitle}}</h2>
+    </div>
+    <div class="accordion-content">
+        <ng-content></ng-content>
+    </div>
+</div>
